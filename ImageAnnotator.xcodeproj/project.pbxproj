@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CB311EC2B876B8700DC739F /* ImageAnnotatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB311EB2B876B8700DC739F /* ImageAnnotatorApp.swift */; };
+		3CB311EE2B876B8700DC739F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB311ED2B876B8700DC739F /* ContentView.swift */; };
+		3CB311F02B876B8700DC739F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB311EF2B876B8700DC739F /* Assets.xcassets */; };
+		3CB311F42B876B8700DC739F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB311F32B876B8700DC739F /* Preview Assets.xcassets */; };
+		3CB311FE2B876B8800DC739F /* ImageAnnotatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB311FD2B876B8800DC739F /* ImageAnnotatorTests.swift */; };
+		3CB312082B876B8800DC739F /* ImageAnnotatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB312072B876B8800DC739F /* ImageAnnotatorUITests.swift */; };
+		3CB3120A2B876B8800DC739F /* ImageAnnotatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB312092B876B8800DC739F /* ImageAnnotatorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3CB311FA2B876B8700DC739F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CB311E02B876B8600DC739F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CB311E72B876B8600DC739F;
+			remoteInfo = ImageAnnotator;
+		};
+		3CB312042B876B8800DC739F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3CB311E02B876B8600DC739F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3CB311E72B876B8600DC739F;
+			remoteInfo = ImageAnnotator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3CB311E82B876B8700DC739F /* ImageAnnotator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageAnnotator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB311EB2B876B8700DC739F /* ImageAnnotatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnnotatorApp.swift; sourceTree = "<group>"; };
+		3CB311ED2B876B8700DC739F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3CB311EF2B876B8700DC739F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CB311F12B876B8700DC739F /* ImageAnnotator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImageAnnotator.entitlements; sourceTree = "<group>"; };
+		3CB311F32B876B8700DC739F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3CB311F92B876B8700DC739F /* ImageAnnotatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageAnnotatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB311FD2B876B8800DC739F /* ImageAnnotatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnnotatorTests.swift; sourceTree = "<group>"; };
+		3CB312032B876B8800DC739F /* ImageAnnotatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageAnnotatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB312072B876B8800DC739F /* ImageAnnotatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnnotatorUITests.swift; sourceTree = "<group>"; };
+		3CB312092B876B8800DC739F /* ImageAnnotatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnnotatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CB311E52B876B8600DC739F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB311F62B876B8700DC739F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB312002B876B8800DC739F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CB311DF2B876B8600DC739F = {
+			isa = PBXGroup;
+			children = (
+				3CB311EA2B876B8700DC739F /* ImageAnnotator */,
+				3CB311FC2B876B8700DC739F /* ImageAnnotatorTests */,
+				3CB312062B876B8800DC739F /* ImageAnnotatorUITests */,
+				3CB311E92B876B8700DC739F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3CB311E92B876B8700DC739F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CB311E82B876B8700DC739F /* ImageAnnotator.app */,
+				3CB311F92B876B8700DC739F /* ImageAnnotatorTests.xctest */,
+				3CB312032B876B8800DC739F /* ImageAnnotatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3CB311EA2B876B8700DC739F /* ImageAnnotator */ = {
+			isa = PBXGroup;
+			children = (
+				3CB311EB2B876B8700DC739F /* ImageAnnotatorApp.swift */,
+				3CB311ED2B876B8700DC739F /* ContentView.swift */,
+				3CB311EF2B876B8700DC739F /* Assets.xcassets */,
+				3CB311F12B876B8700DC739F /* ImageAnnotator.entitlements */,
+				3CB311F22B876B8700DC739F /* Preview Content */,
+			);
+			path = ImageAnnotator;
+			sourceTree = "<group>";
+		};
+		3CB311F22B876B8700DC739F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3CB311F32B876B8700DC739F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3CB311FC2B876B8700DC739F /* ImageAnnotatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CB311FD2B876B8800DC739F /* ImageAnnotatorTests.swift */,
+			);
+			path = ImageAnnotatorTests;
+			sourceTree = "<group>";
+		};
+		3CB312062B876B8800DC739F /* ImageAnnotatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3CB312072B876B8800DC739F /* ImageAnnotatorUITests.swift */,
+				3CB312092B876B8800DC739F /* ImageAnnotatorUITestsLaunchTests.swift */,
+			);
+			path = ImageAnnotatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3CB311E72B876B8600DC739F /* ImageAnnotator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB3120D2B876B8800DC739F /* Build configuration list for PBXNativeTarget "ImageAnnotator" */;
+			buildPhases = (
+				3CB311E42B876B8600DC739F /* Sources */,
+				3CB311E52B876B8600DC739F /* Frameworks */,
+				3CB311E62B876B8600DC739F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageAnnotator;
+			productName = ImageAnnotator;
+			productReference = 3CB311E82B876B8700DC739F /* ImageAnnotator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3CB311F82B876B8700DC739F /* ImageAnnotatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB312102B876B8800DC739F /* Build configuration list for PBXNativeTarget "ImageAnnotatorTests" */;
+			buildPhases = (
+				3CB311F52B876B8700DC739F /* Sources */,
+				3CB311F62B876B8700DC739F /* Frameworks */,
+				3CB311F72B876B8700DC739F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CB311FB2B876B8700DC739F /* PBXTargetDependency */,
+			);
+			name = ImageAnnotatorTests;
+			productName = ImageAnnotatorTests;
+			productReference = 3CB311F92B876B8700DC739F /* ImageAnnotatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3CB312022B876B8800DC739F /* ImageAnnotatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CB312132B876B8800DC739F /* Build configuration list for PBXNativeTarget "ImageAnnotatorUITests" */;
+			buildPhases = (
+				3CB311FF2B876B8800DC739F /* Sources */,
+				3CB312002B876B8800DC739F /* Frameworks */,
+				3CB312012B876B8800DC739F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CB312052B876B8800DC739F /* PBXTargetDependency */,
+			);
+			name = ImageAnnotatorUITests;
+			productName = ImageAnnotatorUITests;
+			productReference = 3CB312032B876B8800DC739F /* ImageAnnotatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3CB311E02B876B8600DC739F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					3CB311E72B876B8600DC739F = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					3CB311F82B876B8700DC739F = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 3CB311E72B876B8600DC739F;
+					};
+					3CB312022B876B8800DC739F = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 3CB311E72B876B8600DC739F;
+					};
+				};
+			};
+			buildConfigurationList = 3CB311E32B876B8600DC739F /* Build configuration list for PBXProject "ImageAnnotator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3CB311DF2B876B8600DC739F;
+			productRefGroup = 3CB311E92B876B8700DC739F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3CB311E72B876B8600DC739F /* ImageAnnotator */,
+				3CB311F82B876B8700DC739F /* ImageAnnotatorTests */,
+				3CB312022B876B8800DC739F /* ImageAnnotatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3CB311E62B876B8600DC739F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB311F42B876B8700DC739F /* Preview Assets.xcassets in Resources */,
+				3CB311F02B876B8700DC739F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB311F72B876B8700DC739F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB312012B876B8800DC739F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CB311E42B876B8600DC739F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB311EE2B876B8700DC739F /* ContentView.swift in Sources */,
+				3CB311EC2B876B8700DC739F /* ImageAnnotatorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB311F52B876B8700DC739F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB311FE2B876B8800DC739F /* ImageAnnotatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CB311FF2B876B8800DC739F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CB312082B876B8800DC739F /* ImageAnnotatorUITests.swift in Sources */,
+				3CB3120A2B876B8800DC739F /* ImageAnnotatorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CB311FB2B876B8700DC739F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CB311E72B876B8600DC739F /* ImageAnnotator */;
+			targetProxy = 3CB311FA2B876B8700DC739F /* PBXContainerItemProxy */;
+		};
+		3CB312052B876B8800DC739F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3CB311E72B876B8600DC739F /* ImageAnnotator */;
+			targetProxy = 3CB312042B876B8800DC739F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3CB3120B2B876B8800DC739F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3CB3120C2B876B8800DC739F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3CB3120E2B876B8800DC739F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ImageAnnotator/ImageAnnotator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ImageAnnotator/Preview Content\"";
+				DEVELOPMENT_TEAM = 33PX7NUTL2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtractor.ImageAnnotator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CB3120F2B876B8800DC739F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ImageAnnotator/ImageAnnotator.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ImageAnnotator/Preview Content\"";
+				DEVELOPMENT_TEAM = 33PX7NUTL2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtractor.ImageAnnotator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3CB312112B876B8800DC739F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33PX7NUTL2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtractor.ImageAnnotatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageAnnotator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ImageAnnotator";
+			};
+			name = Debug;
+		};
+		3CB312122B876B8800DC739F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33PX7NUTL2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtractor.ImageAnnotatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageAnnotator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ImageAnnotator";
+			};
+			name = Release;
+		};
+		3CB312142B876B8800DC739F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33PX7NUTL2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtractor.ImageAnnotatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImageAnnotator;
+			};
+			name = Debug;
+		};
+		3CB312152B876B8800DC739F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 33PX7NUTL2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xtractor.ImageAnnotatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImageAnnotator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CB311E32B876B8600DC739F /* Build configuration list for PBXProject "ImageAnnotator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB3120B2B876B8800DC739F /* Debug */,
+				3CB3120C2B876B8800DC739F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CB3120D2B876B8800DC739F /* Build configuration list for PBXNativeTarget "ImageAnnotator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB3120E2B876B8800DC739F /* Debug */,
+				3CB3120F2B876B8800DC739F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CB312102B876B8800DC739F /* Build configuration list for PBXNativeTarget "ImageAnnotatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB312112B876B8800DC739F /* Debug */,
+				3CB312122B876B8800DC739F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CB312132B876B8800DC739F /* Build configuration list for PBXNativeTarget "ImageAnnotatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CB312142B876B8800DC739F /* Debug */,
+				3CB312152B876B8800DC739F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3CB311E02B876B8600DC739F /* Project object */;
+}
