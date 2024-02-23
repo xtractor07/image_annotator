@@ -11,7 +11,9 @@ struct DrawingPath: Identifiable {
     let id = UUID()
     var points: [CGPoint] = []
     var isDot: Bool = false
+    var color: Color = .black // Default color
 }
+
 
 struct ImagePicker: UIViewControllerRepresentable {
     @Binding var selectedImage: UIImage?
@@ -47,10 +49,13 @@ struct ImagePicker: UIViewControllerRepresentable {
 
 
 struct DrawingCanvas: View {
-    @State private var paths: [DrawingPath] = []
+    @ObservedObject var drawingManager = DrawingManager()
     // Temporary path for real-time drawing updates
     var backgroundImage: UIImage?
     @State private var currentPathPoints: [CGPoint] = []
+    @State private var selectedColor: Color = .black // Default drawing color
+    @State private var showingColorPicker = false
+
 
     var body: some View {
 
@@ -64,19 +69,17 @@ struct DrawingCanvas: View {
                     .gesture(
                         DragGesture(minimumDistance: 0)
                             .onChanged { value in
-                                // Calculate drawable area each time the gesture changes
-                                let drawableArea = calculateDrawableArea(imageSize: backgroundImage?.size ?? .zero, in: geometry.size)
                                 let location = value.location
-                                
-                                // Check if the location is within the drawable area
+                                let drawableArea = calculateDrawableArea(imageSize: backgroundImage?.size ?? .zero, in: geometry.size)
                                 if drawableArea.contains(location) {
                                     currentPathPoints.append(location)
                                 }
                             }
-                            .onEnded { value in
+                            .onEnded { _ in
                                 if !currentPathPoints.isEmpty {
                                     let isDot = currentPathPoints.count <= 2
-                                    paths.append(DrawingPath(points: currentPathPoints, isDot: isDot))
+                                    let newPath = DrawingPath(points: currentPathPoints, isDot: isDot, color: selectedColor) // Use the selected color
+                                    drawingManager.addPath(newPath)
                                     currentPathPoints.removeAll()
                                 }
                             }
@@ -84,19 +87,21 @@ struct DrawingCanvas: View {
                 }
 
                 // Draw the paths that have been finalized
-                ForEach(paths) { path in
+                ForEach(drawingManager.paths) { path in
                     if path.isDot {
                         Circle()
-                            .fill(Color.black)
+                            .fill(path.color)
                             .frame(width: 4, height: 4)
                             .position(path.points.first ?? CGPoint.zero)
                     } else {
                         Path { pathDrawing in
                             guard let firstPoint = path.points.first else { return }
                             pathDrawing.move(to: firstPoint)
-                            pathDrawing.addLines(path.points)
+                            path.points.forEach { point in
+                                pathDrawing.addLine(to: point)
+                            }
                         }
-                        .stroke(Color.black, lineWidth: 2)
+                        .stroke(path.color, lineWidth: 2)
                     }
                 }
                 
@@ -106,12 +111,56 @@ struct DrawingCanvas: View {
                     path.move(to: firstPoint)
                     path.addLines(currentPathPoints)
                 }
-                .stroke(Color.black, lineWidth: 2)
+                .stroke(selectedColor, lineWidth: 2)
+                
+                VStack {
+                        Spacer() // This pushes the controls to the bottom
+                        controlPanel()
+                        .frame(width: geometry.size.width)
+                        .background(Color(UIColor.systemBackground))
+                        .cornerRadius(10)
+                        .shadow(radius: 5)
+                        }
             }
         }
+        .background(Color(white: 0.95).edgesIgnoringSafeArea(.all))
         .padding(.top)
         .padding(.bottom)
-        .background(Color(white: 0.95).edgesIgnoringSafeArea(.all))
+    }
+    
+    func controlPanel() -> some View {
+        HStack {
+            Button(action: drawingManager.undo) {
+                Image(systemName: "arrow.uturn.backward")
+                    .padding()
+                    .background(Circle().fill(Color.white).shadow(radius: 2))
+            }
+            Spacer()
+            Button(action: drawingManager.redo) {
+                Image(systemName: "arrow.uturn.forward")
+                    .padding()
+                    .background(Circle().fill(Color.white).shadow(radius: 2))
+            }
+            Spacer()
+            ColorPicker("Color", selection: $selectedColor, supportsOpacity: false)
+                                .labelsHidden()
+                                .padding(.vertical, 10)
+                                .padding(.horizontal)
+                                .background(Circle().fill(Color.white).shadow(radius: 2))
+            Spacer()
+            Button(action: {
+                print("Will have to implement save method !!!!!!!!!!!")
+            }) {
+                Image(systemName: "square.and.arrow.down")
+                    .padding()
+                    .background(Circle().fill(Color.white).shadow(radius: 2))
+            }
+
+            Spacer()
+        }
+        
+        .padding()
+        // Additional styling as needed...
     }
     
     func calculateDrawableArea(imageSize: CGSize, in containerSize: CGSize) -> CGRect {
@@ -134,6 +183,7 @@ struct DrawingCanvas: View {
         
         return drawableArea
     }
+
 }
 
 struct ContentView: View {

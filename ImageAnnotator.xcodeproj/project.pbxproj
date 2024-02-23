@@ -14,6 +14,7 @@
 		3CB311FE2B876B8800DC739F /* ImageAnnotatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB311FD2B876B8800DC739F /* ImageAnnotatorTests.swift */; };
 		3CB312082B876B8800DC739F /* ImageAnnotatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB312072B876B8800DC739F /* ImageAnnotatorUITests.swift */; };
 		3CB3120A2B876B8800DC739F /* ImageAnnotatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB312092B876B8800DC739F /* ImageAnnotatorUITestsLaunchTests.swift */; };
+		3CB312172B88EC3E00DC739F /* DrawingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB312162B88EC3E00DC739F /* DrawingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		3CB312032B876B8800DC739F /* ImageAnnotatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageAnnotatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB312072B876B8800DC739F /* ImageAnnotatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnnotatorUITests.swift; sourceTree = "<group>"; };
 		3CB312092B876B8800DC739F /* ImageAnnotatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnnotatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CB312162B88EC3E00DC739F /* DrawingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3CB311EF2B876B8700DC739F /* Assets.xcassets */,
 				3CB311F12B876B8700DC739F /* ImageAnnotator.entitlements */,
 				3CB311F22B876B8700DC739F /* Preview Content */,
+				3CB312162B88EC3E00DC739F /* DrawingManager.swift */,
 			);
 			path = ImageAnnotator;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CB311EE2B876B8700DC739F /* ContentView.swift in Sources */,
+				3CB312172B88EC3E00DC739F /* DrawingManager.swift in Sources */,
 				3CB311EC2B876B8700DC739F /* ImageAnnotatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
